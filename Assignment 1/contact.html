@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Writer Portfolio - Contact</title>
+
+    <meta charset="UTF-8">
+
+    <link rel="icon" href="writer.jpg">
+
+</head>
+
+<body>
+
+    <nav align="center">
+
+        <a href="index.html">Home</a> |
+        <a href="about.html">About Me</a> |
+        <a href="works.html">My Works</a> |
+        <a href="contact.html">Contact</a>
+
+    </nav>
+
+    <hr>
+
+    <h1 align="center">Contact Me</h1>
+
+    <p align="center">
+        Fill in the form below to share your feedback.
+    </p>
+
+    <hr>
+
+    <form onsubmit="return registerSuccess()">
+    <script>
+    function registerSuccess() {
+    alert("Customer details registered successfully");
+    return true;
+    }
+    </script>
+
+    <fieldset>
+
+        <label>Full Name:</label><br>
+        <input type="text"
+       name="fname"
+       required
+       maxlength="20"
+       pattern="[A-Za-z]{2,20}"
+       title="First name should contain only alphabets (maximum 20 letters).">
+        <br>
+
+        <label>Email Address:</label><br>
+        <input type="email" name="email"><br><br>
+
+        <label>Phone Number:</label><br>
+        <input type="tel"
+       maxlength="10"
+       minlength="10"
+       pattern="[0-9]{10}"
+       required
+       title="Enter a valid 10-digit phone number.">
+       <br>
+
+        <label>Favourite Writing Genre:</label><br>
+
+        <select name="genre">
+
+            <option>Poetry</option>
+            <option>Short Story</option>
+            <option>Novel</option>
+            <option>Blog</option>
+            <option>Article</option>
+
+        </select>
+
+        <br><br>
+
+        <label>Rate My Portfolio:</label><br>
+
+        <input type="radio" name="rating"> Excellent
+        <input type="radio" name="rating"> Good
+        <input type="radio" name="rating"> Average
+
+        <br><br>
+
+        <label>Topics You Like:</label><br>
+
+        <input type="checkbox"> Fiction<br>
+        <input type="checkbox"> Non-Fiction<br>
+        <input type="checkbox"> Poetry<br>
+        <input type="checkbox"> Biography<br>
+        <input type="checkbox"> Blogs<br>
+
+        <br>
+
+        <label>Your Feedback:</label><br>
+
+        <textarea rows="5" cols="40"></textarea>
+
+        <br><br>
+
+        <button type="Submit">Submit</button>
+
+        <button type="Cancel">Reset</button>
+
+    </form>
+
+    <hr>
+
+    <p align="center">
+
+        Thank You for Visiting My Writer Portfolio!
+
+    </p>
+
+</body>
+
+</html>
